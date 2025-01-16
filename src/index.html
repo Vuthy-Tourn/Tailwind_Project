@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../image/VT icon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <meta
+      name="description"
+      content="Find the best deals, coupons, and promotions from shops in Cambodia. Save big on your shopping with exclusive offers and discounts at VT Store."
+      data-rh="true"
+    />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="VT Store">
+    <meta property="og:title" content="VT Store" data-rh="true" />
+    <meta property="og:image" content="https://images.all-free-download.com/images/thumbjpg/web_technology_conceptual_banner_template_modern_3d_dark_techno_elements_6939048.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="VT Logo Ecommerce Website" />
+    <meta property="og:type" content="website">
+    <meta
+      property="og:description"
+      content="Discover the latest deals, coupons, and promotions from shops in Cambodia at VT. Save on your shopping with our curated list of discounts and offers."
+      data-rh="true"
+    />
+    <meta name="twitter:site" content="Ecommerce" data-rh="true" />
+    <meta name="twitter:card" content="summary_large_image" data-rh="true" />
+    <meta
+      name="twitter:title"
+      content="VT Store | Platform for Cambodian Deals"
+      data-rh="true"
+    />
+    <meta
+      name="twitter:description"
+      content="Find the best deals, coupons, and promotions from shops in Cambodia. Save big on your shopping with exclusive offers and discounts at VT Store.  Furthermore, you can a brand shoes such as Nike, Adidas and others with a good price and deals. Step into the Future of Footwear and find a perfect fit and comfort for everyday steps."
+      data-rh="true"
+    />
+    <title>VT</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Poppins", serif;
+        background-color: #f8f9fa;
+      }
+      .typed-cursor {
+        font-size: 50px;
+        color: #00d4ff;
+      }
+      .swiper-wrapper {
+        width: 100%;
+        height: max-content !important;
+        padding-bottom: 64px !important;
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+        position: relative;
+      }
+      .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background: #4f46e5 !important;
+      }
+    </style>
+  </head>
+  <body class="font-poppins bg-gray-100">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-50 bg-gradient-to-r from-blue-500 to-blue-900 text-white shadow-md"
+    >
+      <nav class="flex items-center justify-between px-6 py-4 md:px-10">
+        <div class="flex items-center">
+          <img src="../image/VT logo.png" alt="logo" class="w-24" />
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium items-center">
+          <a href="#" class="hover:text-cyan-400">Home</a>
+          <a href="#" class="hover:text-cyan-400">Shop</a>
+          <a href="#" class="hover:text-cyan-400">About</a>
+          <a href="#" class="hover:text-cyan-400">Contact</a>
+          <a
+            href="#"
+            class="px-6 py-2 bg-cyan-400 rounded-full font-semibold hover:bg-cyan-300"
+            >Login</a
+          >
+        </div>
+        <div
+          class="md:hidden text-2xl cursor-pointer"
+          id="menu-toggle"
+          onclick="toggleMenu()"
+        >
+          &#9776;
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <ul
+        class="flex-col bg-gradient-to-r from-blue-500 to-blue-900 text-white text-center hidden"
+        id="mobile-menu"
+      >
+        <li class="p-2">
+          <a href="#" class="hover:text-cyan-400 p-2">Home</a>
+        </li>
+        <li class="p-2">
+          <a href="#" class="hover:text-cyan-400 p-2">Shop</a>
+        </li>
+        <li class="p-2">
+          <a href="#" class="hover:text-cyan-400 p-2">About</a>
+        </li>
+        <li class="p-2">
+          <a href="#" class="hover:text-cyan-400 p-2">Contact</a>
+        </li>
+        <li class="p-4">
+          <a
+            href="#"
+            class="px-6 py-2 bg-cyan-400 rounded-full font-semibold hover:bg-cyan-300"
+            >Login</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative h-[92vh] flex flex-col justify-center items-center text-center text-white bg-cover bg-center px-6"
+        style="
+          background-image: url('https://png.pngtree.com/background/20231016/original/pngtree-d-illustration-of-networked-computer-technology-with-ai-artificial-intelligence-in-picture-image_5578560.jpg');
+        "
+      >
+        <div>
+          <h1
+            class="text-3xl sm:text-5xl font-bold drop-shadow-lg inline"
+            id="typed-text"
+          ></h1>
+          <p class="mt-4 text-base sm:text-lg">
+            Discover the latest technology at unbeatable prices.
+          </p>
+          <button
+            class="mt-6 px-6 sm:px-10 py-3 sm:py-4 bg-cyan-400 rounded-full font-bold text-white hover:bg-blue-700 transition"
+          >
+            Shop Now
+          </button>
+        </div>
+      </section>
+
+      <section>
+  <div class="w-full relative px-4 sm:px-6 lg:px-10 my-5">
+    <div class="swiper progress-slide-carousel swiper-container relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://s3.ap-southeast-1.amazonaws.com/uploads-store/uploads/all/u7eptEZnEWFJZEJgyTVLyy9O0HFJKJ8B7DStvN37.jpg"
+            alt="img1 of caroucel"
+            class="w-full h-auto"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://s3.ap-southeast-1.amazonaws.com/uploads-store/uploads/all/fiqpR51tgig5qFbVia5aVwPXk2t1rsYGIKKOBmnY.jpg"
+            alt="img2 of caroucel"
+            class="w-full h-auto"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://s3.ap-southeast-1.amazonaws.com/uploads-store/uploads/all/vEzX6BT8p3mng28pge1g8P2J7qwhkJmjxk8iqfcn.jpg"
+            alt="img3 of caroucel"
+            class="w-full h-auto"
+          />
+        </div>
+      </div>
+      <div
+        class="swiper-pagination !bottom-2 !top-auto !w-3/4 sm:!w-2/3 lg:!w-1/2 right-0 mx-auto bg-gray-100"
+      ></div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Product Categories Section -->
+      <section class="py-10 bg-gray-50">
+        <h2
+          class="text-center text-2xl sm:text-4xl font-bold uppercase bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mb-10"
+        >
+          Laptops
+        </h2>
+        <div class="card"></div>
+        <div
+          class="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-10"
+        >
+          <!-- Card Example -->
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzUjwLwYbfn2Qj2BfSWJnXPS18ADNQip9jCOduQaU8oqdTcXgQQCe42tJDzer7hjuVDL8&usqp=CAU"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[80%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                Macbook M4 Pro
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $2,499
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/HUAWEI%20Laptop/2024/NoteBook%20/Huawei-B3-330x409.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[65%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                HUAWEI MateBook B3
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $499
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/MSI/2024/NoteBook%20/Prestige-16-AI-B1MG-330x409.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[65%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                MSI Prestige 16 AI Evo
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $599
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/ASUS/2024/Notebook%20/Consumer%20/HT5306QA-330x409.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[65%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                ASUS ProArt PZ13 OLED
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $299
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <!-- Repeat Cards -->
+        </div>
+      </section>
+      <!-- Product Categories Section -->
+      <section class="py-10 bg-gray-50">
+        <h2
+          class="text-center text-2xl sm:text-4xl font-bold uppercase bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mb-10"
+        >
+          Gaming PC
+        </h2>
+        <div
+          class="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-10"
+        >
+          <!-- Card Example -->
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/ASUS/2023/GAMING/G814JI-Grey-330x409.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[65%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                Asus ROG Strix G16
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $999
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/ASUS/2023/GAMING/FA507NV-Grey-330x409.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[65%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                Asus TUF Gaming F15
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $899
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/ASUS/2024/GAMING/GU605MI-330x409.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[65%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                Asus ROG Zephyrus G16
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $1199
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/ASUS/2023/GAMING/GX650PY-Black-330x409.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[65%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                ASUS ROG Zephyrus Duo 16
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $1899
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <!-- Repeat Cards -->
+        </div>
+      </section>
+      <!-- Product Categories Section -->
+      <section class="py-10 bg-gray-50">
+        <h2
+          class="text-center text-2xl sm:text-4xl font-bold uppercase bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mb-10"
+        >
+          Accessories
+        </h2>
+        <div
+          class="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-10"
+        >
+          <!-- Card Example -->
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Keyboard/Asus-ROG-Azoth-200x200.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[80%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                KEYBOARD ONIKUMA G58
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $59
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Mouse/CW905-White-200x200.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[80%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                MOUSE ONIKUMA CW905
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Colorful RGB lighting effect, more cool to wear in games
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $29
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Headset/T20%20White-200x200.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[80%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                EARBUDS ONIKUMA T20
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $39
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-md hover:shadow-lg transition"
+            data-aos="zoom-in"
+          >
+            <div class="flex justify-center">
+              <img
+                src="https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Headset/X13-200x200.jpg"
+                alt="Product Image"
+                class="rounded-t-lg object-cover w-[80%]"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                HEADSET ONIKUMA X13
+              </h3>
+              <p class="text-gray-500 text-sm mt-2">
+                Great value for high-end gaming performance.
+              </p>
+              <div class="flex justify-between">
+                <p
+                  class="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent mt-4"
+                >
+                  $49
+                </p>
+                <div class="flex items-center space-x-1 mt-4">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star-half-alt text-yellow-500"></i>
+                  <span class="text-sm text-gray-500">4.5/5.0</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block mt-4 text-center px-6 py-2 bg-cyan-400 rounded-md font-bold text-white hover:bg-cyan-300"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+          <!-- Repeat Cards -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-500 to-blue-900 text-white py-10">
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10"
+      >
+        <div class="text-center md:text-left">
+          <img
+            src="../image/VT logo.png"
+            alt="logo"
+            class="mx-auto md:mx-0 mb-4 w-32"
+          />
+        </div>
+        <div>
+          <h3
+            class="text-xl font-semibold border-b-2 border-cyan-400 inline-block pb-2 mb-4"
+          >
+            Quick Links
+          </h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-cyan-400">Home</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Shop</a></li>
+            <li><a href="#" class="hover:text-cyan-400">About</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3
+            class="text-xl font-semibold border-b-2 border-cyan-400 inline-block pb-2 mb-4"
+          >
+            Contact Us
+          </h3>
+          <p>
+            <strong>Address:</strong> ISTAD, Phnom Penh
+          </p>
+          <p><strong>Email:</strong> support@VT-shop.com</p>
+          <p><strong>Phone:</strong> +855 16 400 108</p>
+        </div>
+      </div>
+      <div class="text-center mt-10 border-t border-cyan-400 pt-4">
+        <p>&copy; 2025 VT-shop. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+      // Typed.js initialization
+      new Typed("#typed-text", {
+        strings: [
+          "Explore Our Exclusive Products",
+          "Discover Amazing Deals",
+          "Shop with Confidence",
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        loop: true,
+      });
+
+      var swiper = new Swiper(".progress-slide-carousel", {
+        loop: true,
+        fraction: true,
+        autoplay: {
+          delay: 1200,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".progress-slide-carousel .swiper-pagination",
+          type: "progressbar",
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
